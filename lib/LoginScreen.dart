@@ -39,11 +39,25 @@ class _LoginScreenState extends State<LoginScreen> {
                 margin: EdgeInsets.only(top: 30),
                 height: deviceHeight * 0.25,
                 child: FittedBox(
-                  child: CircleAvatar(
-                    backgroundImage: AssetImage(
-                      'assets/images/employee.png',
+                  // child: CircleAvatar(
+                  //   backgroundImage: AssetImage(
+                  //     'assets/images/employee.png',
+                  //   ),
+                  //   radius: 120,
+                  // ),
+                  child: const CircleAvatar(
+                    radius: 130,
+                    backgroundColor: Colors.blue,
+                    child: CircleAvatar(
+                      radius: 120,
+                      backgroundColor: Color.fromARGB(255, 66, 163, 242),
+                      child: CircleAvatar(
+                        radius: 120,
+                        backgroundImage: AssetImage(
+                          'assets/images/employee.png',
+                        ),
+                      ),
                     ),
-                    radius: 120,
                   ),
                 ),
               ),

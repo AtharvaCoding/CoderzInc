@@ -1,6 +1,10 @@
+import 'package:coderz_inc/AddEvent.dart';
 import 'package:coderz_inc/LoginScreen.dart';
 import 'package:coderz_inc/MongoDbModel.dart';
+import 'package:coderz_inc/UpdateEmployee.dart';
 import 'package:coderz_inc/dbHelper/mongodb.dart';
+import 'package:coderz_inc/employeedashboard.dart';
+import 'package:coderz_inc/piechart.dart';
 import 'package:flutter/material.dart';
 import 'package:mongo_dart/mongo_dart.dart' as M;
 
@@ -21,7 +25,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      // home: AddEvent(),
       home: const LoginScreen(),
+      // home: const EmployeeDashboard(),
+      // home: const UpdateEmployee(),
     );
   }
 }
